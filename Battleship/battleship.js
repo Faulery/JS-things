@@ -37,8 +37,8 @@ let model = {
   collision: function (locations) {
     for (let i = 0; i < this.ships; i++) {
       let ship = model.ships[i];
-      for (let j = 0; j < locations.length; i++) {
-        if (ship.locations.indexOf(locations[i]) >= 0) {
+      for (let j = 0; j < locations.length; j++) {
+        if (ship.locations.indexOf(locations[j]) >= 0) {
           return true;
         }
       }
